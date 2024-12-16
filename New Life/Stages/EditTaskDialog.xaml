@@ -1,0 +1,14 @@
+﻿<Window x:Class="New_Life.Stages.EditTaskDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Редактирование задачи" 
+        Height="200" Width="400" WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <TextBlock Text="Введите новую задачу:" VerticalAlignment="Top" Margin="0,0,0,10" />
+        <TextBox x:Name="TaskInput" VerticalAlignment="Center" Margin="0,30,0,60" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Content="OK" Width="75" Margin="5" Click="OkButton_Click" />
+            <Button Content="Отмена" Width="75" Margin="5" Click="CancelButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
